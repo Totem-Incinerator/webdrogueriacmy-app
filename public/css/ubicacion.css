@@ -1,0 +1,66 @@
+:root {
+    --verde-oscuro: #1a3a32;
+    --verde-claro: #d8f3dc;
+    --verde-acento: #74c69d;
+}
+
+.seccion-ubicaciones {
+    background-color: #f0f7f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tabla-contenedor {
+    max-height: 550px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--verde-acento) transparent;
+}
+
+.table thead th {
+    background-color: var(--verde-oscuro);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: none;
+}
+
+.punto-fila {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.punto-fila:hover {
+    background-color: #f8fbf9 !important;
+}
+
+.punto-fila.active {
+    background-color: var(--verde-claro) !important;
+    border-left: 6px solid var(--verde-oscuro) !important;
+}
+
+#mapa-visor {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.visor-card {
+    border: none;
+    border-radius: 20px;
+    background: white;
+}
+
+.btn-google {
+    background-color: var(--verde-oscuro);
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.2s;
+}
+
+.btn-google:hover {
+    background-color: #2d6a4f;
+    color: white;
+    transform: translateY(-2px);
+}

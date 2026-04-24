@@ -1,0 +1,421 @@
+body{
+    margin:0;
+    font-family:"Roboto", sans-serif;
+    padding:0 ;
+    justify-content:space-between;
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* slider */
+
+.swiper{
+    width:100%;
+    height:500px;
+}
+
+/* slide */
+
+.swiper-slide{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:150px;
+    max-width:1800px;
+    margin:0;
+}
+
+/* texto grande */
+
+.titulo{
+    font-size:45px;
+    font-weight:bold;
+    color:#0b0b2a;
+    max-width:300px;
+}
+
+/* imagen */
+
+.imagen img{
+    width:550px;
+}
+
+/* menu vertical */
+
+.menu{
+    position:absolute;
+    left:120px;
+    bottom:80px;
+}
+
+.menu div{
+    color:#aaa;
+    margin:10px 0;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.menu .activo{
+    color:#111;
+    font-weight:bold;
+    transform:translateX(10px);
+}
+
+.ruta {
+
+border-collapse: collapse;
+background: linear-gradient(to bottom, #339933 0%, #ffffff 3%);
+padding: 60px 20px;
+text-align: center;
+}
+
+.ruta h2 {
+font-weight: 700;
+color:rgb(15, 16, 16);
+}
+
+.ruta p {
+    color:rgb(1, 5, 5);
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CONTENEDOR DE LOS PASOS */
+.steps {
+    position: relative;
+    margin-top: 60px;
+}
+
+/* LÍNEA CENTRAL */
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 15%;   /* antes 10% */
+    width: 70%;  /* antes 80% */
+    height: 2px;
+    background-color:rgb(32, 133, 86);
+    z-index: 0;
+}
+
+/* CÍRCULOS */
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    color:rgb(7, 20, 30);
+    position: relative;
+    z-index: 1;
+}
+
+/* TEXTOS */
+.step-title {
+    margin-top: 15px;
+    font-weight: 600;
+    color:rgb(13, 13, 14);
+}
+.small{
+    color:rgb(13, 13, 14); 
+}
+/* seccion infromatica */
+
+.header-title {
+    font-weight: 700;
+    color: #1f3c5c;
+  }
+
+  .header-title span {
+    color: #2e7d32;
+  }
+
+  .step-card {
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+  }
+
+  .step-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .step-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+  }
+
+  .step-number {
+    width: 65px;
+    height: 65px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .info-section {
+    background:rgb(0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .info-box {
+    text-align: center;
+  }
+
+  .info-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+
+  .footer-bar {
+    background: #e8f5e9;
+    border-radius: 50px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-custom {
+    background: #2e7d32;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+
+  .btn-custom:hover {
+    background: #256628;
+  }
+  /* Imagen orden */
+.img-orden {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  /* Imagen mapa */
+  .img-map {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  /* Imagen médica */
+  .img-medica {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+/* =========================================
+    1. noticias
+    ========================================= */
+    .seccion-recalcada-final {
+      width: 100vw;
+      margin: 0;
+      padding: 40px 0;
+      text-align: center;
+      /* IMPORTANTE: overflow: hidden sigue siendo vital aquí 
+          para que no salga barra de desplazamiento horizontal */
+          border-radius: 40px;
+          background: linear-gradient(145deg, #ffffff, #f0f0f0);
+          border: 4px solid transparent;
+          background-clip: padding-box, border-box;
+          background-origin: padding-box, border-box;
+          background-image: 
+              linear-gradient(to right, #ffffff, #ffffff), 
+              linear-gradient(135deg, #7f1db7 0%, #32d167 50%, #d4fc79 100%);
+          box-shadow: 
+              0 20px 60px rgba(0, 0, 0, 0.05),
+              0 10px 20px rgba(8, 134, 46, 0.08),
+              inset 0 0 20px rgba(255, 255, 255, 0.5);
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          cursor: default;
+          text-align: center; /* Centrar título */
+        }
+    
+        .seccion-recalcada-final:hover {
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 
+                0 30px 70px rgba(0, 0, 0, 0.1),
+                0 15px 30px rgba(50, 209, 103, 0.2);
+    }
+
+    /* Título */
+    h2.titulo-seccion {
+        margin-bottom: 40px; /* Más espacio abajo */
+        font-weight: 800;
+        color: #38830d;
+        font-family: sans-serif; /* O tu fuente global */
+    }
+
+    /* =========================================
+        2. NUEVO CÓDIGO PARA EL CARRUSEL (Deslizable)
+        ========================================= */
+    
+    /* El Visor: Es la "ventana" por donde vemos las fotos */
+    .visor-carrusel {
+      
+        width: 100%;
+        height: 500px; /* Altura fija cómoda */
+        position: relative; 
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden; /* Oculta lo que no está en vista */
+    }
+
+    /* El Contenedor Ultra-Ancho: Este es el que se mueve */
+    .contenedor-diapositivas {
+        display: flex; /* Pone las imágenes en fila (una al lado de la otra) */
+        width: 300%; /* IMPORTANTE: 100% por cada imagen (3 imágenes = 300%) */
+        height: 100%;
+        /* Transición suave y profesional para el movimiento horizontal */
+        transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+        will-change: transform; /* Optimización para el navegador */
+    }
+
+    /* Cada Diapositiva individual */
+    .slide-pro-horizontal {
+        width: 100%; /* 100% dividido entre 3 imágenes */
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    /* Estilo de la Imagen dentro */
+    .slide-pro-horizontal img {
+        max-width: 100%;
+        max-height: 100%;
+        /* 'cover' hace que la imagen llene el espacio, 
+            puedes usar 'contain' si no quieres que se corte nada */
+        object-fit: cover; 
+        border-radius: 15px; /* Pequeño borde a la imagen misma */
+    }
+/* NUESTROS SERVICIOS */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #1e2a38;
+}
+
+.header h1 span {
+  color: #2e7d32;
+}
+
+.header p {
+  color: #6c757d;
+}
+
+.badge {
+  background: #e8f5e9;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* ICONOS */
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.green { background: #e8f5e9; color: #2e7d32; }
+.blue { background: #e3f2fd; color: #1976d2; }
+.yellow { background: #fff8e1; color: #f9a825; }
+
+/* BOTONES */
+.btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn.green { background: #2e7d32; }
+.btn.blue { background: #1976d2; }
+.btn.yellow { background: #f9a825; }
+
+/* INFO */
+.info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.info div {
+  text-align: center;
+  margin: 10px;
+}
+
+.info i {
+  font-size: 25px;
+  color: #2e7d32;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .steps::before {
+        display: none;
+    }
+}
+
+
+

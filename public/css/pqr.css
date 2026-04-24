@@ -1,0 +1,120 @@
+body {
+    background-color: #f0f4f1;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor Principal con bordes redondeados */
+.pqrs-card {
+    max-width: 1000px;
+    width: 95%;
+    background-color: #ffffff;
+    border-radius: 40px; /* Bordes muy redondeados como tu imagen */
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Panel Lateral Izquierdo (Verde) */
+.side-panel {
+    background: linear-gradient(to right, #2a8a2a 0%, #d4edda 100%);
+    padding: 60px 40px;
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-panel h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.side-panel p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Panel del Formulario */
+.form-panel {
+    flex: 1 1 550px;
+    padding: 50px;
+    background-color: #fdfdfd;
+}
+
+.form-header h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form-header p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los Inputs similar a tu captura */
+.custom-input {
+    border-radius: 25px !important;
+    padding: 12px 25px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    box-shadow: 0 4px 12px rgba(42, 138, 42, 0.15);
+    border-color: #d4edda;
+    outline: none;
+}
+
+/* Input de archivo personalizado */
+.file-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 15px;
+}
+
+/* Botón estilo "Crear Turno" */
+.btn-crear {
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    padding: 12px 45px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 100, 0, 0.2);
+    margin-top: 10px;
+}
+
+.btn-crear:hover {
+    background-color: #004d00;
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .side-panel {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .form-panel {
+        padding: 30px 20px;
+    }
+}
