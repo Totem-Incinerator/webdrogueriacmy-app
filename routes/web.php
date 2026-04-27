@@ -33,7 +33,7 @@ Route::get('/nuestras-sedes-cauca', function () {
     return view('puntos_ubi'); 
 })->name('sedes.ubicacion');
 
-Route::get('/atencion-al-usuario-pqrs', function () {
+Route::get('/pqrs', function () {
     // Laravel buscará el archivo pqrs.blade.php o pqrs.php
     return view('pqrs'); 
 })->name('pqrs.index');
