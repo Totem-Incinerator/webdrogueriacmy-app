@@ -805,11 +805,7 @@
 
 
     <!-- ══════════ FOOTER STRIP ══════════ -->
-    <footer class="footer-strip">
-        <div class="container">
-            <p><strong>Droguería Cabildo Mayor Yanaconas</strong> · Patrimonio Cultural y Ambiental del Macizo Colombiano · <span>Pueblo Yanacona</span></p>
-        </div>
-    </footer>
+
 
 
     <!-- Bootstrap 5.3.0 JS -->
@@ -859,6 +855,10 @@
             observer.observe(el);
         });
     </script>
+
+<footer>
+  @include('templates.footer')
+</footer>
 
 </body>
 </html>

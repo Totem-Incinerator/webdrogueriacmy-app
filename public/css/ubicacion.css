@@ -10,33 +10,41 @@
 }
 
 .tabla-contenedor {
-    max-height: 550px;
+    max-height: 600px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--verde-acento) transparent;
+    
 }
 
 .table thead th {
-    background-color: var(--verde-oscuro);
-    color: white;
+    
     position: sticky;
     top: 0;
     z-index: 10;
     border: none;
 }
+.punto-fila data-img{
+    width:200%;
+    height:100%;
+    object-fit: cover; /*  hace que TODAS tengan mismo tamaño */
 
+   
+}
 .punto-fila {
     cursor: pointer;
     transition: all 0.2s ease;
+    width: 100px;
+   
 }
 
 .punto-fila:hover {
-    background-color: #f8fbf9 !important;
+    background-color: #a2afa6 !important;
 }
 
 .punto-fila.active {
     background-color: var(--verde-claro) !important;
-    border-left: 6px solid var(--verde-oscuro) !important;
+     border-left: 1px solid var(--verde-oscuro) !important;
 }
 
 #mapa-visor {
