@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="{{asset('/css/footer.css')}}">
+</head>
+<body>
     
     <footer class="footer">
 
@@ -51,6 +53,6 @@
         © 2024 Cabildo Mayor - Todos los derechos reservados
         </div>
 
-</footer>
+    </footer>
 </body>
 </html>

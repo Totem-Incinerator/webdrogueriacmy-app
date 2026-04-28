@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -7,15 +6,19 @@ body {
 .footer {
   background: linear-gradient(135deg, #0d2b45, #123a5c);
   color: white;
-  padding: 50px 20px 20px;
+  width: 100%;
+  margin-top: 50px; /* 👈 espacio arriba */
+  padding: 40px 0;
+  border: 1px solid red;
 }
 
 .footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: auto;
 }
 
 .footer-col {

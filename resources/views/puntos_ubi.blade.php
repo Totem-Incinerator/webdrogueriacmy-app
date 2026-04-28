@@ -32,13 +32,13 @@
                             </tr>
                         </thead>
                         <tbody style="cursor: pointer;">
-                            <tr class="punto-fila active" data-img="img/logo.png" data-place="Calle 8 # 9-76, Popayan, Cauca">
+                            <tr class="punto-fila active" data-img="img/popayan1.png" data-place="Calle 8 # 9-76, Popayan, Cauca">
                                 <td class="fw-bold text-success">POPAYÁN PRINCIPAL</td>
                                 <td>THAIRON GONZALES</td>
                                 <td>3012654002</td>
                                 <td>LUN-VIE (7AM-4PM)</td>
                             </tr>
-                            <tr class="punto-fila" data-img="img/cauca.png" data-place="Carrera 9 # 10N-94, Popayan, Cauca">
+                            <tr class="punto-fila" data-img="img/popayan2.png" data-place="Carrera 9 # 10N-94, Popayan, Cauca">
                                 <td class="fw-bold text-success">POPAYÁN DOS</td>
                                 <td>NATHALY MAJIN</td>
                                 <td>3012654002</td>
@@ -56,7 +56,7 @@
                                 <td>3122420392</td>
                                 <td>LUN-VIE (8AM-5PM)</td>
                             </tr>
-                            <tr class="punto-fila" data-img="img/la_vega.png" data-place="La Vega, Cauca, Colombia">
+                            <tr class="punto-fila" data-img="img/vega.png" data-place="La Vega, Cauca, Colombia">
                                 <td class="fw-bold text-success">LA VEGA</td>
                                 <td>YETZICA CASTILLO</td>
                                 <td>3224139667</td>
@@ -80,7 +80,7 @@
                                 <td>3146590033</td>
                                 <td>LUN-VIE (8AM-5PM)</td>
                             </tr>
-                            <tr class="punto-fila" data-img="img/san_juan.png" data-place="San Juan, Bolivar, Cauca">
+                            <tr class="punto-fila" data-img="img/san_juan.png" data-place="San Juan, Bolivar, Cauca" >
                                 <td class="fw-bold text-success">SAN JUAN</td>
                                 <td>YULIETH DIAZ PUJIMUY</td>
                                 <td>3122241716</td>
@@ -93,7 +93,6 @@
 
             <div class="col-lg-4 text-center">
                 <div class="p-3 border rounded-4 bg-light shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-                    <h6 class="text-muted mb-3" style="font-style: italic;">Punto de Dispensación</h6>
                     <img id="mapa-visor" src="img/ubicacion.png" class="img-fluid rounded-3 shadow" style="transition: all 0.3s ease; max-height: 380px; object-fit: contain;">
                 </div>
             </div>
@@ -162,6 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<footer>
+  @include('templates.footer')
+</footer>
 
 </body>
 </html>

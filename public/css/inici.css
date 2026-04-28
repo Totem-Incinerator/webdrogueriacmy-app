@@ -1,89 +1,100 @@
 body{
     margin:0;
     font-family:"Roboto", sans-serif;
-    padding:0 ;
-    justify-content:space-between;
+    padding:0;
     width:100%;
     overflow-x:hidden;
+    border: 2px solid green;
 }
 
 /* slider */
 
 .swiper{
     width:100%;
-    height:500px;
+    height:700px;
+    position: relative;
+    background: #FFFFFF;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 92%, rgba(81, 153, 40, 1) 100%);
 }
 
 /* slide */
 
 .swiper-slide{
+    position: relative;
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:150px;
-    max-width:1800px;
-    margin:0;
+    justify-content:flex-start;
+    height:100%;
+    overflow:hidden;
 }
 
 /* texto grande */
 
 .titulo{
-    font-size:45px;
+    position: relative;
+    z-index: 2;
+    font-size:40px; /* más pequeño */
     font-weight:bold;
-    color:#0b0b2a;
+    color:#1f3c5c;
     max-width:300px;
+    margin-left:120px;
+    padding:10px;
+    border-radius:10px;
 }
 
+
 /* imagen */
+.imagen{
+    position: absolute;
+    right:0;
+    top:0;
+    width:75%;
+    height:100%;
+    z-index: 1;
+    
+}
 
 .imagen img{
-    width:550px;
+    width:100%;
+    height:100%;
+    object-fit: cover; /*  hace que TODAS tengan mismo tamaño */
+    opacity:1; /*  opacidad */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* menu vertical */
-
 .menu{
     position:absolute;
     left:120px;
     bottom:80px;
+    z-index:3;
 }
 
 .menu div{
-    color:#aaa;
-    margin:10px 0;
-    font-size:18px;
+    color:#265203;
+    margin:8px 0;
+    font-size: 20px;
     transition:0.3s;
 }
 
 .menu .activo{
-    color:#111;
     font-weight:bold;
     transform:translateX(10px);
+    color:#1f3c5c;
 }
 
-.ruta {
 
-border-collapse: collapse;
-background: linear-gradient(to bottom, #339933 0%, #ffffff 3%);
-padding: 60px 20px;
-text-align: center;
-}
-
-.ruta h2 {
-font-weight: 700;
-color:rgb(15, 16, 16);
-}
-
-.ruta p {
-    color:rgb(1, 5, 5);
-    max-width: 700px;
-    margin: auto;
-}
 
 /* CONTENEDOR DE LOS PASOS */
+.header-title{
+  margin-top: 20px;
+}
 .steps {
     position: relative;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 /* LÍNEA CENTRAL */
@@ -228,87 +239,52 @@ color:rgb(15, 16, 16);
 /* =========================================
     1. noticias
     ========================================= */
-    .seccion-recalcada-final {
-      width: 100vw;
-      margin: 0;
-      padding: 40px 0;
-      text-align: center;
-      /* IMPORTANTE: overflow: hidden sigue siendo vital aquí 
-          para que no salga barra de desplazamiento horizontal */
-          border-radius: 40px;
-          background: linear-gradient(145deg, #ffffff, #f0f0f0);
-          border: 4px solid transparent;
-          background-clip: padding-box, border-box;
-          background-origin: padding-box, border-box;
-          background-image: 
-              linear-gradient(to right, #ffffff, #ffffff), 
-              linear-gradient(135deg, #7f1db7 0%, #32d167 50%, #d4fc79 100%);
-          box-shadow: 
-              0 20px 60px rgba(0, 0, 0, 0.05),
-              0 10px 20px rgba(8, 134, 46, 0.08),
-              inset 0 0 20px rgba(255, 255, 255, 0.5);
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          cursor: default;
-          text-align: center; /* Centrar título */
-        }
-    
-        .seccion-recalcada-final:hover {
-            transform: translateY(-10px) scale(1.01);
-            box-shadow: 
-                0 30px 70px rgba(0, 0, 0, 0.1),
-                0 15px 30px rgba(50, 209, 103, 0.2);
-    }
 
     /* Título */
     h2.titulo-seccion {
         margin-bottom: 40px; /* Más espacio abajo */
-        font-weight: 800;
+        text-align: center;
         color: #38830d;
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 2;
         font-family: sans-serif; /* O tu fuente global */
     }
 
-    /* =========================================
-        2. NUEVO CÓDIGO PARA EL CARRUSEL (Deslizable)
-        ========================================= */
+  .visor-carrusel {
     
-    /* El Visor: Es la "ventana" por donde vemos las fotos */
-    .visor-carrusel {
-      
-        width: 100%;
-        height: 500px; /* Altura fija cómoda */
-        position: relative; 
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: hidden; /* Oculta lo que no está en vista */
-    }
+      width: 100%;
+      height: 600px; /* Altura fija cómoda */
+      position: relative; 
+      object-fit: cover;
+      overflow: hidden; /* Oculta lo que no está en vista */
+  }
 
-    /* El Contenedor Ultra-Ancho: Este es el que se mueve */
-    .contenedor-diapositivas {
-        display: flex; /* Pone las imágenes en fila (una al lado de la otra) */
-        width: 300%; /* IMPORTANTE: 100% por cada imagen (3 imágenes = 300%) */
-        height: 100%;
-        /* Transición suave y profesional para el movimiento horizontal */
-        transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
-        will-change: transform; /* Optimización para el navegador */
-    }
+  /* El Contenedor Ultra-Ancho: Este es el que se mueve */
+  .contenedor-diapositivas {
+      display: flex; /* Pone las imágenes en fila (una al lado de la otra) */
+      height: 100%;
+      /* Transición suave y profesional para el movimiento horizontal */
+      transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform; /* Optimización para el navegador */
+  }
 
-    /* Cada Diapositiva individual */
-    .slide-pro-horizontal {
-        width: 100%; /* 100% dividido entre 3 imágenes */
-        height: 100%;
-        object-fit: cover;
-        
-    }
+  /* Cada Diapositiva individual */
+  .slide-pro-horizontal {
+    min-width: 100%; /* esto es lo correcto en carruseles */
+    height: 100%;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */     
+  }
 
-    /* Estilo de la Imagen dentro */
-    .slide-pro-horizontal img {
-        max-width: 100%;
-        max-height: 100%;
-        /* 'cover' hace que la imagen llene el espacio, 
-            puedes usar 'contain' si no quieres que se corte nada */
-        object-fit: cover; 
-        border-radius: 15px; /* Pequeño borde a la imagen misma */
-    }
+  /* Estilo de la Imagen dentro */
+  .slide-pro-horizontal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 todas iguales, sin deformarse */
+    border-radius: 15px;
+  }
 /* NUESTROS SERVICIOS */
 .services {
   padding: 60px 20px;
