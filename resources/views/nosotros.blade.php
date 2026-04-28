@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Sobre nosotros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+@extends('layouts.app')
 
-    <!-- ICONOS (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="{{asset('/css/nosotros.css')}}">
-    @include('templates.header')
-</head>
+@section('title', 'Sobre Nosotros')
 
-<body>
-<style>
+@section('content')
 
-</style>
+<link rel="stylesheet" href="{{ asset('css/nosotros.css') }}">
 
 <section class="valores-section">
     <div class="container">
@@ -64,16 +54,49 @@
 
     </div>
 </section>
- <section>
-    <h1> politicas de calidad</h1>
-    <p> En DROGUERÍA CABILDO MAYOR YANACONAS nos comprometemos con la distribución, dispensación y comercialización de medicamentos, dispositivos médicos e insumos, garantizando la calidad, seguridad y trazabilidad de nuestros productos en el departamento del Cauca.
 
-    Nuestra gestión se orienta al cumplimiento de los objetivos organizacionales mediante la capacitación continua de nuestro talento humano, la adecuada administración, control y ejecución de los procesos, y la implementación de la normatividad vigente exigida por las autoridades competentes, tales como la Secretaría de Salud, INVIMA, SUPERSALUD y el Ministerio de Salud y Protección Social.
+<!-- 🔥 POLÍTICAS EN TEXTO (COMO LO TENÍAS) -->
+<section class="py-5" style="background: #f8f9fa;">
+    <div class="container">
 
-    Asimismo, promovemos el mejoramiento continuo de nuestros procesos y el fortalecimiento de nuestras instalaciones físicas en cada punto de dispensación, con el fin de asegurar un servicio oportuno, seguro y confiable para nuestros comuneros.
-    En DROGUERÍA CABILDO MAYOR YANACONAS reafirmamos nuestro compromiso con la calidad, la transparencia y la confianza, contribuyendo al fortalecimiento del sistema de salud en el departamento del Cauca.
-</p>
- </section>
+        <div class="text-center mb-4">
+            <h2 class="fw-bold" style="color:#1a3a32;">Políticas de Calidad</h2>
+        </div>
 
-</body>
-</html>
+        <div class="card shadow-sm p-4 rounded-4">
+
+            <p style="text-align: justify;">
+                En <strong>DROGUERÍA CABILDO MAYOR YANACONAS</strong> nos comprometemos con la distribución,
+                dispensación y comercialización de medicamentos, dispositivos médicos e insumos farmacéuticos,
+                garantizando la calidad, seguridad y trazabilidad de los productos que ofrecemos.
+            </p>
+
+            <p style="text-align: justify;">
+                Nuestro enfoque está orientado a satisfacer las necesidades de la comunidad, brindando un servicio
+                oportuno, eficiente y humanizado, respaldado por talento humano competente y capacitado
+                continuamente.
+            </p>
+
+            <p style="text-align: justify;">
+                Cumplimos con la normatividad vigente establecida por entidades como el INVIMA,
+                la Superintendencia Nacional de Salud y el Ministerio de Salud y Protección Social,
+                asegurando procesos seguros y confiables.
+            </p>
+
+            <p style="text-align: justify;">
+                Trabajamos bajo un enfoque de mejoramiento continuo, fortaleciendo nuestros procesos,
+                infraestructura y atención al usuario, con el fin de garantizar la satisfacción
+                y confianza de nuestros afiliados.
+            </p>
+
+            <p style="text-align: justify;">
+                Reafirmamos nuestro compromiso con la calidad, la transparencia y la responsabilidad social,
+                contribuyendo al bienestar y desarrollo del sistema de salud en el departamento del Cauca.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+@endsection

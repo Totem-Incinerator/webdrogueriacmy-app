@@ -3,47 +3,81 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER INFO (ARRIBA)
+========================= */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* 🔥 menos espacio */
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 15px auto; /* 🔥 reducido */
+  max-width: 1000px;
+}
+
+.info div {
+  flex: 1;
+  min-width: 180px;
+}
+
+.info i {
+  font-size: 20px; /* 🔥 más pequeño */
+  margin-bottom: 5px;
+}
+
+/* =========================
+   FOOTER PRINCIPAL
+========================= */
 .footer {
   background: linear-gradient(135deg, #0d2b45, #123a5c);
   color: white;
-  padding: 50px 20px 20px;
+  padding: 25px 15px 10px; /* 🔥 mucho más compacto */
 }
 
+/* CONTENEDOR */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1100px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; /* 🔥 menos separación */
+  max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
+/* COLUMNAS */
 .footer-col {
   flex: 1;
-  min-width: 250px;
-  margin: 15px;
+  min-width: 200px;
+  margin: 5px; /* 🔥 menos margen */
 }
 
 /* TITULOS */
-.footer h2, .footer h3 {
-  margin-bottom: 15px;
+.footer h2, 
+.footer h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .footer .sub {
   color: #4caf50;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 /* TEXTOS */
 .footer p {
   color: #b0c4d4;
-  margin: 8px 0;
+  margin: 4px 0; /* 🔥 reducido */
+  font-size: 14px;
 }
 
 .footer i {
-  margin-right: 8px;
+  margin-right: 5px;
   color: white;
-  align-items: center;
 }
 
 /* ENLACES */
@@ -53,32 +87,33 @@ body {
 }
 
 .footer ul li {
-  margin: 10px 0;
+  margin: 6px 0;
   color: #b0c4d4;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 .footer ul li:hover {
   color: #f7f7f7;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 /* REDES SOCIALES */
 .socials a {
-  width: 45px;
-  height: 45px;
+  width: 35px;  /* 🔥 más pequeño */
+  height: 35px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.3s;
 }
 
-/* COLORES COMO LA IMAGEN */
+/* COLORES */
 .fb { background: #3b5998; }
 .ig { background: radial-gradient(circle, #feda75, #d62976, #962fbf); }
 .wa { background: #25d366; }
@@ -90,16 +125,58 @@ body {
 /* FOOTER FINAL */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  padding-top: 15px;
+  margin-top: 10px; /* 🔥 reducido */
+  padding-top: 8px;
   border-top: 1px solid rgba(255,255,255,0.2);
   color: #ccc;
+  font-size: 13px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   NOTICIAS / CARRUSEL
+========================= */
+.seccion-recalcada-final {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visor-carrusel {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-diapositivas {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide-pro-horizontal {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-pro-horizontal img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media(max-width: 768px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 10px;
   }
 }
