@@ -4,7 +4,6 @@ body{
     padding:0;
     width:100%;
     overflow-x:hidden;
-    border: 2px solid green;
 }
 
 /* slider */
@@ -393,5 +392,8 @@ body{
     }
 }
 
-
-
+.imagen img{
+  padding: 1px;
+  max-width: 100%;
+  height: auto; 
+}
