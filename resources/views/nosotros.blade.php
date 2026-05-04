@@ -204,6 +204,45 @@
             margin: 0;
         }
 
+        /* .img-anime-1{
+            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_1.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        } */
+
+        .img-anime-1{
+            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_1.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .img-anime-2{
+            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_2.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .img-anime-3{
+            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_3.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* .img-anime{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        } */
+
         /* ── DERECHOS / DEBERES ── */
         .dd-panel {
             border-radius: 16px;
@@ -443,10 +482,7 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-4 animate-in delay-1">
-                    <div class="valor-card">
-                        <div class="icon-wrap"><i class="bi bi-heart-pulse-fill"></i></div>
-                        <h5>Compromiso Social</h5>
-                        <p>Estamos dedicados al bienestar de la comunidad, ofreciendo un servicio accesible, equitativo y sensible a sus necesidades de salud.</p>
+                    <div class="valor-card img-anime-1">
                     </div>
                 </div>
 
@@ -467,10 +503,28 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-4 animate-in delay-4">
+                    <div class="valor-card img-anime-2">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 animate-in delay-4">
                     <div class="valor-card">
                         <div class="icon-wrap"><i class="bi bi-eye-fill"></i></div>
                         <h5>Integridad</h5>
                         <p>Actuamos con honestidad, transparencia y responsabilidad en todas nuestras operaciones y relaciones.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 animate-in delay-1">
+                    <div class="valor-card">
+                        <div class="icon-wrap"><i class="bi bi-heart-pulse-fill"></i></div>
+                        <h5>Compromiso Social</h5>
+                        <p>Estamos dedicados al bienestar de la comunidad, ofreciendo un servicio accesible, equitativo y sensible a sus necesidades de salud.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 animate-in delay-5">
+                    <div class="valor-card img-anime-3">
                     </div>
                 </div>
 
