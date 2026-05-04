@@ -48,7 +48,7 @@
       <div class="swiper-slide">
         <div class="titulo">Nuestros Canales de Atención</div>
         <div class="imagen">
-          <img src="{{ asset('img/dispensador.jpeg') }}">
+          <img src="{{ asset('img/contactos.png') }}">
         </div>
       </div>
 
@@ -313,10 +313,10 @@
         })();
       </script>
     
-    </section>
-                            
+    </section>                     
+  </div>
 
-    @include('templates.footer')
+  @include('templates.footer')
 
   
 </body>

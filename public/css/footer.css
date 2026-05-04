@@ -9,7 +9,6 @@ body {
   width: 100%;
   margin-top: 50px; /* 👈 espacio arriba */
   padding: 40px 0;
-  border: 1px solid red;
 }
 
 .footer-container {
