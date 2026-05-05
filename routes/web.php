@@ -41,3 +41,7 @@ Route::get('/nosotros', function () {
     // Laravel buscará el archivo pqrs.blade.php o pqrs.php
     return view('nosotros'); 
 })->name('nosotros');
+
+
+// RUTAS VISTAS REFACTORIZADAS
+Route::get("/inicio-ref", fn () => view("pages.inicio"));
