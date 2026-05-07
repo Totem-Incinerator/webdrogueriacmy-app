@@ -26,7 +26,7 @@
       <div class="swiper-slide">
         <div class="titulo">Drogueria Cabildo Mayor</div>
         <div class="imagen">
-          <img src="{{ asset('img/equipo.jpeg') }}">
+          <img src="{{ asset('img/rengente.png') }}">
         </div>
       </div>
       <!-- Slide 2 -->
@@ -274,16 +274,16 @@
       <div class="visor-carrusel">
         <div class="contenedor-diapositivas" id="tiraImagenes">
             <div class="slide-pro-horizontal">
-              <img src="{{ asset('img/equipo.jpeg') }}" alt="">
+              <img src="{{ asset('img/bastones.jpeg') }}" alt="">
             </div>
             <div class="slide-pro-horizontal">
-              <img src="{{ asset('img/equipo.jpeg') }}" alt="">
+              <img src="{{ asset('img/deposito.jpg') }}" alt="">
             </div>
             <div class="slide-pro-horizontal">
-              <img src="{{ asset('img/info_pacientes.png') }}" alt="">
+              <img src="{{ asset('img/info_usuario.jpg') }}" alt="">
             </div>
             <div class="slide-pro-horizontal">
-              <img src="{{ asset('img/info_pacientes.png') }}" alt="">
+              <img src="{{ asset('img/contributivos.jpg') }}" alt="">
             </div>
         </div>
       </div>

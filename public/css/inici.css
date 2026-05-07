@@ -253,7 +253,7 @@ body{
   .visor-carrusel {
     
       width: 100%;
-      height: 600px; /* Altura fija cómoda */
+      height: 700px; /* Altura fija cómoda */
       position: relative; 
       object-fit: cover;
       overflow: hidden; /* Oculta lo que no está en vista */

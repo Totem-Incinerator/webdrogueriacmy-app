@@ -23,7 +23,7 @@
 
             <p><i class="fas fa-map-marker-alt"></i> Calle 8 #9-76 B / San Camilo</p>
             <p><i class="fas fa-phone"></i> +123 456 789</p>
-            <p><i class="fas fa-envelope"></i> info@cabildomayor.com</p>
+            <p><i class="fas fa-envelope"></i>gestiondocumentalcmy@gmail.com</p>
         </div>
 
         <!-- ENLACES -->
@@ -50,7 +50,7 @@
         </div>
 
         <div class="footer-bottom">
-        © 2024 Cabildo Mayor - Todos los derechos reservados
+             © 2026 Cabildo Mayor - Todos los derechos reservados
         </div>
 
     </footer>

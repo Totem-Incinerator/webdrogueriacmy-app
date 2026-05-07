@@ -64,7 +64,7 @@
             background: rgba(255,255,255,.15);
             border: 1px solid rgba(255,255,255,.3);
             color: var(--dorado-claro);
-            font-size: .75rem;
+            font-size: .90rem;
             font-weight: 600;
             letter-spacing: .12em;
             text-transform: uppercase;
@@ -77,15 +77,18 @@
             color: var(--crema);
             font-size: clamp(1.9rem, 4vw, 2.8rem);
             line-height: 1.2;
+            
         }
         .hero-section h1 span {
             color: var(--dorado-claro);
         }
         .hero-section p.lead {
             color: rgba(255,255,255,.82);
-            font-size: 1.05rem;
+            font-size: 1.4rem;
             font-weight: 300;
             max-width: 560px;
+            text-align: justify;
+            
         }
         .hero-divider {
             width: 56px;
@@ -107,7 +110,7 @@
         .nav-tabs-custom .nav-link {
             color: var(--texto-medio);
             font-weight: 500;
-            font-size: .9rem;
+            font-size: 1.1rem;
             padding: 14px 22px;
             border: none;
             border-bottom: 3px solid transparent;
@@ -134,7 +137,7 @@
         .content-section:nth-child(even) { background: var(--blanco); }
 
         .section-eyebrow {
-            font-size: .72rem;
+            font-size: 1rem;
             font-weight: 700;
             letter-spacing: .15em;
             text-transform: uppercase;
@@ -193,12 +196,12 @@
         }
         .valor-card h5 {
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: var(--verde-oscuro);
             margin-bottom: 8px;
         }
         .valor-card p {
-            font-size: .9rem;
+            font-size: 1.1rem;
             color: var(--texto-medio);
             line-height: 1.6;
             margin: 0;
@@ -213,7 +216,7 @@
         } */
 
         .img-anime-1{
-            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_1.jpg') }}');
+            background-image: url('{{ asset('img/equipo.jpeg') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -221,7 +224,7 @@
         }
 
         .img-anime-2{
-            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_2.jpg') }}');
+            background-image: url('{{ asset('img/niño.jpeg') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -229,7 +232,7 @@
         }
 
         .img-anime-3{
-            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_3.jpg') }}');
+            background-image: url('{{ asset('img/IMAGEN_NOSOTROS_1.jpg') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -272,7 +275,7 @@
         }
         .dd-panel-header small {
             color: rgba(255,255,255,.65);
-            font-size: .78rem;
+            font-size: 1.2rem;
         }
         .dd-list {
             background: var(--blanco);
@@ -300,7 +303,7 @@
         .deberes-bullet  { background: #dde8d4; color: #3d5c1e; }
         .dd-list li .item-content strong {
             display: block;
-            font-size: .92rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--verde-oscuro);
             margin-bottom: 3px;
@@ -357,7 +360,7 @@
             color: var(--blanco);
             border-radius: 50px;
             padding: 8px 18px;
-            font-size: .8rem;
+            font-size: 1.1rem;
             font-weight: 500;
             display: inline-flex; align-items: center; gap: 6px;
             margin: 4px;
@@ -377,13 +380,13 @@
         .calidad-card-header h3 {
             font-family: 'Playfair Display', serif;
             color: var(--blanco);
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             margin: 0;
         }
         .calidad-card-header small { color: rgba(255,255,255,.65); font-size: .8rem; }
         .calidad-body { padding: 32px; }
         .calidad-body p {
-            font-size: .95rem;
+            font-size: 1.8 rem;
             line-height: 1.8;
             color: var(--texto-medio);
         }
@@ -392,7 +395,7 @@
             background: var(--verde-suave);
             border: 1px solid var(--verde-borde);
             color: var(--verde-oscuro);
-            font-size: .78rem;
+            font-size: 1.1rem;
             font-weight: 600;
             padding: 5px 13px;
             border-radius: 50px;
@@ -432,7 +435,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     {{-- <div class="badge-tag animate-in">Droguería · Cabildo Mayor Yanaconas</div> --}}
-                    <h1 class="animate-in delay-1">Nuestro <span>Equipo</span><br>de Trabajo</h1>
+                    <h1 class="animate-in delay-1">Nuestro <span>equipo de</span><br>Dinamizadores</h1>
                     <div class="hero-divider animate-in delay-2"></div>
                     <p class="lead animate-in delay-3">
                         Conformado por dinamizadores altamente capacitados, comprometidos con la salud y el bienestar de nuestros comuneros, brindando un servicio responsable, oportuno y de calidad

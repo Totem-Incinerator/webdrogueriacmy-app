@@ -10,7 +10,8 @@
 }
 
 .tabla-contenedor {
-    max-height: 600px;
+    max-height: 1800px;
+    margin: 40px auto;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--verde-acento) transparent;
@@ -24,6 +25,26 @@
     z-index: 10;
     border: none;
 }
+#tabla-sedes {
+    font-size: 1.05rem; /* 🔥 más grande */
+}
+
+#tabla-sedes thead th {
+    font-size: 1.1rem;
+    padding: 14px;
+}
+
+#tabla-sedes tbody td {
+    padding:
+     16px;
+}
+#tabla-sedes tbody tr {
+    height: auto;
+}
+#tabla-sedes td,
+#tabla-sedes th {
+    vertical-align: middle;
+}
 .punto-fila data-img{
     width:200%;
     height:100%;
@@ -34,8 +55,13 @@
 .punto-fila {
     cursor: pointer;
     transition: all 0.2s ease;
-    width: 100px;
-   
+    width: 300px;
+    height: 100px
+  
+}
+.punto-fila td:first-child {
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .punto-fila:hover {
@@ -49,9 +75,10 @@
 
 #mapa-visor {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease;
-    max-height: 400px;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+  
 }
 
 .visor-card {
