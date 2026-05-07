@@ -45,3 +45,6 @@ Route::get('/nosotros', function () {
 
 // RUTAS VISTAS REFACTORIZADAS
 Route::get("/inicio-ref", fn () => view("pages.inicio"));
+Route::get("/sedes-ref", fn () => view("pages.sedes"));
+Route::get("/pqrs-ref", fn () => view("pages.pqrs"));
+Route::get("/nosotros-ref", fn () => view("pages.nosotros"));
