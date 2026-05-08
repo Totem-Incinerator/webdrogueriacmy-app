@@ -33,7 +33,7 @@ Route::get('/nuestras-sedes-cauca', function () {
     return view('puntos_ubi'); 
 })->name('sedes.ubicacion');
 
-Route::get('/atencion-al-usuario-pqrs', function () {
+Route::get('/pqrs', function () {
     // Laravel buscará el archivo pqrs.blade.php o pqrs.php
     return view('pqrs'); 
 })->name('pqrs.index');
@@ -41,3 +41,10 @@ Route::get('/nosotros', function () {
     // Laravel buscará el archivo pqrs.blade.php o pqrs.php
     return view('nosotros'); 
 })->name('nosotros');
+
+
+// RUTAS VISTAS REFACTORIZADAS
+Route::get("/inicio-ref", fn () => view("pages.inicio"));
+Route::get("/sedes-ref", fn () => view("pages.sedes"));
+Route::get("/pqrs-ref", fn () => view("pages.pqrs"));
+Route::get("/nosotros-ref", fn () => view("pages.nosotros"));

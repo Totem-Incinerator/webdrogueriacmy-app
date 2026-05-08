@@ -1,10 +1,10 @@
-body{
+/* body{
     margin:0;
     font-family:"Roboto", sans-serif;
     padding:0;
     width:100%;
     overflow-x:hidden;
-}
+} */
 
 /* slider */
 
@@ -17,7 +17,6 @@ body{
 }
 
 /* slide */
-
 .swiper-slide{
     position: relative;
     display:flex;
@@ -26,6 +25,14 @@ body{
     height:100%;
     overflow:hidden;
 }
+
+/* Ocultar imagenes superpuestas */
+.swiper{
+    padding:0;
+    width:100%;
+    overflow: hidden;
+}
+
 
 /* texto grande */
 
@@ -253,7 +260,7 @@ body{
   .visor-carrusel {
     
       width: 100%;
-      height: 700px; /* Altura fija cómoda */
+      height: 600px; /* Altura fija cómoda */
       position: relative; 
       object-fit: cover;
       overflow: hidden; /* Oculta lo que no está en vista */

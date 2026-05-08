@@ -118,7 +118,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link {{ request()->routeIs(['pqrs', 'pqrs.*']) ? 'active' : '' }}" href="{{ route('pqrs.index') }}">
                             <i class="bi bi-chat-dots me-1"></i> PQRS
                         </a>
                     </li>

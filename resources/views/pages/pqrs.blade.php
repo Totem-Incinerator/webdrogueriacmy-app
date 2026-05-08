@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{asset('/css/pqr.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>PQRS – Droguería Cabildo Mayor</title>
-    
-</head>
-<body>
+@extends("layouts.app")
 
-    @include('templates.header')
+@section("title", "PQRS | DCMY")
 
-    <!-- ── Page Header ── -->
+@push("styles")
+    <link rel="stylesheet" href="{{ asset("css/pages/pqrs.css") }}">
+@endpush
+
+@section("content")
+
 <header class="page-header">
-  <h1>Envía tu <span>PQRS</span></h1>
-  <p class="mb-0 mt-2">Droguería Cabildo Mayor · Pueblo Yanacona · Macizo Colombiano</p>
+    <h1>Envía tu <span>PQRS</span></h1>
+    <p class="mb-0 mt-2">Droguería Cabildo Mayor · Pueblo Yanacona · Macizo Colombiano</p>
 </header>
 
 <!-- ── Main ── -->
@@ -146,7 +141,7 @@
   </div>
 
   <!-- ── Consulta Card ── -->
-  <div class="card">
+  {{-- <div class="card">
     <div class="card-body p-4">
       <div class="row g-4 align-items-center">
 
@@ -159,7 +154,6 @@
         <div class="col">
           <h2 class="consulta-card">¿Ya enviaste una PQRS?</h2>
           <p class="text-muted mb-3" style="font-size:.88rem">Consulta el estado de tu solicitud ingresando tu documento de identidad.</p>
-
           <form id="consultaForm" novalidate>
             <div class="row g-3 align-items-end">
               <div class="col-sm-4">
@@ -187,24 +181,11 @@
             </div>
           </form>
         </div>
-
       </div>
     </div>
-  </div>
+  </div> --}}
 
 </main>
-
-<!-- ── Footer ── -->
-{{-- <footer class="site-footer mt-4">
-  <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-    <div class="footer-social d-flex gap-2">
-      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-    </div>
-    <div class="footer-brand">DCMY</div>
-    <div class="footer-copy">CABILDO MAYOR · 2026</div>
-  </div>
-</footer> --}}
 
 <!-- ── Toast ── -->
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -218,14 +199,8 @@
     </div>
   </div>
 </div>
+@endsection
 
-    <!-- Bootstrap 5.3.0 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('js/pqrs.js') }}"></script>
-
-
-  <footer>
-  @include('templates.footer')
-</footer>
-</body>
-</html>
+@push("scripts")
+    <script src="{{ asset("js/pages/pqrs.js") }}"></script>
+@endpush

@@ -1,20 +1,6 @@
+<footer class="footer">
 
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDrogueria - Inicio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <link rel="stylesheet" href="{{asset('/css/footer.css')}}">
-</head>
-<body>
-    
-    <footer class="footer">
-
-        <div class="footer-container">
+    <div class="footer-container">
 
         <!-- LOGO + INFO -->
         <div class="footer-col">
@@ -22,8 +8,8 @@
             <p class="sub">Comprometidos con tu bienestar</p>
 
             <p><i class="fas fa-map-marker-alt"></i> Calle 8 #9-76 B / San Camilo</p>
-            <p><i class="fas fa-phone"></i> +123 456 789</p>
-            <p><i class="fas fa-envelope"></i>gestiondocumentalcmy@gmail.com</p>
+            <p><i class="fas fa-phone"></i>+57 310 210 2026</p>
+            <p><i class="fas fa-envelope"></i> info@cabildomayor.com</p>
         </div>
 
         <!-- ENLACES -->
@@ -47,12 +33,11 @@
             </div>
         </div>
 
-        </div>
 
         <div class="footer-bottom">
-             © 2026 Cabildo Mayor - Todos los derechos reservados
+            © 2026 Cabildo Mayor - Todos los derechos reservados
         </div>
 
-    </footer>
-</body>
-</html>
+    </div>
+    
+</footer>
