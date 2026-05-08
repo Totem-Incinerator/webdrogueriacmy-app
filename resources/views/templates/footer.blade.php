@@ -22,7 +22,7 @@
             <p class="sub">Comprometidos con tu bienestar</p>
 
             <p><i class="fas fa-map-marker-alt"></i> Calle 8 #9-76 B / San Camilo</p>
-            <p><i class="fas fa-phone"></i> +123 456 789</p>
+            <p><i class="fas fa-phone"></i> 3112102026</p>
             <p><i class="fas fa-envelope"></i>gestiondocumentalcmy@gmail.com</p>
         </div>
 

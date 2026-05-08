@@ -21,6 +21,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
+    background:#ffffff !important;
     padding: 1rem 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -36,7 +37,7 @@ body {
 
 /* Botones del Menú */
 .nav-link {
-    color: #444 !important;
+    color: #1e2a38 !important;
     font-weight: 500;
     padding: 0.8rem 1.2rem !important;
     margin: 0 5px;
@@ -65,10 +66,136 @@ body {
     align-items: center;
 }
 
-/* Responsivo: Ajuste para móviles */
-@media (max-width: 991px) {
-    .nav-link {
-        margin: 5px 0;
-        text-align: center;
+/* =========================
+   DESKTOP GRANDES
+========================= */
+@media (min-width: 1200px) {
+
+    .container{
+        max-width:1140px;
+        width:100%;
+        margin:auto;
     }
+
+}
+/* =========================
+   LAPTOPS Y TABLETS GRANDES
+========================= */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container{
+        max-width:960px;
+        width:100%;
+        margin:auto;
+    }
+
+}
+/* =========================
+   TABLETS
+========================= */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container{
+        max-width:720px;
+        width:100%;
+        margin:auto;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
+
+/* =========================
+   CELULARES
+========================= */
+@media (max-width: 767px) {
+
+    .container{
+        width:100%;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
+/* =========================
+   BOTÓN HAMBURGUESA
+========================= */
+
+.navbar-toggler{
+    border:none !important;
+    box-shadow:none !important;
+    outline:none !important;
+}
+
+.navbar-toggler i{
+    font-size:2rem;
+    color:var(--primary-green);
+}
+
+/* =========================
+   MENÚ RESPONSIVE
+========================= */
+
+@media (max-width: 991px){
+
+    .navbar{
+        padding:0.8rem 0;
+    }
+
+    .navbar-brand img{
+        width:140px;
+    }
+
+    .navbar-collapse{
+        background:#ffffff;
+        margin-top:15px;
+        padding:20px;
+        border-radius:18px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+        animation:menuFade .3s ease;
+    }
+
+    .navbar-nav{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+    }
+
+    .nav-link{
+        width:100%;
+        padding:14px 18px !important;
+        margin:0;
+        border-radius:12px;
+        font-size:1rem;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        border:1px solid #f1f1f1;
+    }
+
+    .nav-link:hover{
+        transform:none;
+    }
+
+}
+
+/* =========================
+   ANIMACIÓN MENÚ
+========================= */
+
+@keyframes menuFade{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
