@@ -206,7 +206,7 @@
           <h3>Medicamentos pendientes</h3>
           <p>Consulta tu pentiente y estado por WhatsApp.</p>
           <a
-            href="https://wa.me/573207896481?text=Hola,%20deseo%20consultar%20el%20estado%20de%20mi%20medicamento%20pendiente">
+            href="https://wa.me/573112102026?text=Hola,%20deseo%20consultar%20el%20estado%20de%20mi%20medicamento%20pendiente">
             <button class="btn green">Enviar mensaje</button>
           </a>
         </div>
