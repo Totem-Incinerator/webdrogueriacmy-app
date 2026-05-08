@@ -269,3 +269,57 @@ textarea.form-control { min-height: 120px; resize: vertical; }
 
 /* ── Placeholder ── */
 ::placeholder { color: #a8bfad !important; opacity: 1; }
+
+
+
+/* =========================
+   DESKTOP GRANDES
+========================= */
+@media (min-width: 1200px) {
+
+    .container{
+        max-width:1140px;
+        width:100%;
+        margin:auto;
+    }
+
+}
+/* =========================
+   LAPTOPS Y TABLETS GRANDES
+========================= */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container{
+        max-width:960px;
+        width:100%;
+        margin:auto;
+    }
+
+}
+/* =========================
+   TABLETS
+========================= */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container{
+        max-width:720px;
+        width:100%;
+        margin:auto;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
+
+/* =========================
+   CELULARES
+========================= */
+@media (max-width: 767px) {
+
+    .container{
+        width:100%;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}

@@ -21,10 +21,10 @@ body{
 .swiper-slide{
     position: relative;
     display:flex;
-    align-items:center;
     justify-content:flex-start;
-    height:100%;
+    align-items:center;
     overflow:hidden;
+    padding-left:70px;
 }
 
 /* texto grande */
@@ -35,10 +35,13 @@ body{
     font-size:40px; /* más pequeño */
     font-weight:bold;
     color:#1f3c5c;
-    max-width:300px;
-    margin-left:120px;
+    text-align:left;
+    max-width:320px;
     padding:10px;
-    border-radius:10px;
+    padding:15px 20px;
+    border-radius:12px;
+    background:rgba(255, 255, 255, 0.348);
+    backdrop-filter:blur(1px);
 }
 
 
@@ -239,51 +242,51 @@ body{
     1. noticias
     ========================================= */
 
-    /* Título */
-    h2.titulo-seccion {
-        margin-bottom: 40px; /* Más espacio abajo */
-        text-align: center;
-        color: #38830d;
-        font-size: 40px;
-        font-weight: bold;
-        z-index: 2;
-        font-family: sans-serif; /* O tu fuente global */
-    }
+/* Título */
+h2.titulo-seccion {
+    margin-bottom: 40px; /* Más espacio abajo */
+    text-align: center;
+    color: #38830d;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2;
+    font-family: sans-serif; /* O tu fuente global */
+}
 
-  .visor-carrusel {
-    
-      width: 100%;
-      height: 700px; /* Altura fija cómoda */
-      position: relative; 
-      object-fit: cover;
-      overflow: hidden; /* Oculta lo que no está en vista */
-  }
-
-  /* El Contenedor Ultra-Ancho: Este es el que se mueve */
-  .contenedor-diapositivas {
-      display: flex; /* Pone las imágenes en fila (una al lado de la otra) */
-      height: 100%;
-      /* Transición suave y profesional para el movimiento horizontal */
-      transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-      will-change: transform; /* Optimización para el navegador */
-  }
-
-  /* Cada Diapositiva individual */
-  .slide-pro-horizontal {
-    min-width: 100%; /* esto es lo correcto en carruseles */
-    height: 100%;
-    display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center; /* centra vertical */     
-  }
-
-  /* Estilo de la Imagen dentro */
-  .slide-pro-horizontal img {
+.visor-carrusel {
+  
     width: 100%;
+    height: 700px; /* Altura fija cómoda */
+    position: relative; 
+    object-fit: cover;
+    overflow: hidden; /* Oculta lo que no está en vista */
+}
+
+/* El Contenedor Ultra-Ancho: Este es el que se mueve */
+.contenedor-diapositivas {
+    display: flex; /* Pone las imágenes en fila (una al lado de la otra) */
     height: 100%;
-    object-fit: cover; /* 🔥 todas iguales, sin deformarse */
-    border-radius: 15px;
-  }
+    /* Transición suave y profesional para el movimiento horizontal */
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform; /* Optimización para el navegador */
+}
+
+/* Cada Diapositiva individual */
+.slide-pro-horizontal {
+  min-width: 100%; /* esto es lo correcto en carruseles */
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center; /* centra vertical */     
+}
+
+/* Estilo de la Imagen dentro */
+.slide-pro-horizontal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*  todas iguales, sin deformarse */
+  border-radius: 15px;
+}
 /* NUESTROS SERVICIOS */
 .services {
   padding: 60px 20px;
@@ -396,4 +399,194 @@ body{
   padding: 1px;
   max-width: 100%;
   height: auto; 
+}
+
+
+/* =========================
+   DESKTOP GRANDES
+========================= */
+@media (min-width: 1200px) {
+
+  .visor-carrusel{
+    height:600px;
+  }
+
+  h2.titulo-seccion{
+      font-size:34px;
+}
+
+}
+/* =========================
+ LAPTOPS Y TABLETS GRANDES
+========================= */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .swiper{
+    height:500px;
+}
+
+.swiper-slide{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.titulo{
+    font-size:32px;
+    max-width:280px;
+    padding:12px 18px;
+}
+
+.imagen{
+    width:100%;
+    height:100%;
+}
+
+.imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.menu{
+    bottom:20px;
+    left:40px;
+}
+
+.menu div{
+    font-size:15px;
+}
+
+}
+/* =========================
+ TABLETS
+========================= */
+@media (min-width: 768px) and (max-width: 991px) {
+
+ 
+  .swiper{
+    height:500px;
+  }
+
+  .titulo{
+      font-size:30px;
+      margin-left:50px;
+      max-width:250px;
+  }
+
+  .menu{
+      left:50px;
+      bottom:40px;
+  }
+
+  .menu div{
+      font-size:16px;
+  }
+
+  .imagen{
+      width:80%;
+  }
+
+  .container{
+      max-width:720px;
+      width:100%;
+      margin:auto;
+      padding-left:15px;
+      padding-right:15px;
+  }
+  .visor-carrusel{
+    height:500px;
+  }
+
+  h2.titulo-seccion{
+      font-size:30px;
+      margin-bottom:25px;
+  }
+
+  .slide-pro-horizontal img{
+      border-radius:12px;
+  }
+
+}
+/* =========================
+ CELULARES
+========================= */
+@media (max-width: 767px) {
+
+.swiper{
+    height:320px;
+}
+
+.swiper-slide{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.titulo{
+    font-size:24px;
+    max-width:220px;
+    padding:10px 15px;
+}
+.imagen img{
+  object-position:center;
+}
+
+/* menú abajo horizontal */
+.menu{
+    left:0;
+    bottom:10px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+  .menu div{
+      font-size:12px;
+      margin:0;
+      background:rgba(255,255,255,0.8);
+      padding:5px 10px;
+      border-radius:20px;
+  }
+
+  .container{
+      width:100%;
+      padding-left:15px;
+      padding-right:15px;
+  }
+  .visor-carrusel {
+    width: 100%;
+    height: 250px; /* ↓ más pequeña en celular */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slide-pro-horizontal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  h2.titulo-seccion {
+      font-size: 28px; /* título más pequeño */
+      margin-bottom: 20px;
+  }
+  .visor-carrusel{
+    height:300px;
+  }
+
+  h2.titulo-seccion{
+      font-size:24px;
+      margin-bottom:20px;
+      padding-left:10px;
+      padding-right:10px;
+  }
+
+  .slide-pro-horizontal img{
+      border-radius:10px;
+      object-position:center;
+  }
+
+
 }
