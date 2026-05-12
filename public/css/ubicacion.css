@@ -13,20 +13,20 @@
     max-height: 1800px;
     margin: 40px auto;
     overflow-y: auto;
+    overflow-x: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--verde-acento) transparent;
-    
 }
 
 .table thead th {
-    
     position: sticky;
     top: 0;
     z-index: 10;
     border: none;
 }
+
 #tabla-sedes {
-    font-size: 1.05rem; /* 🔥 más grande */
+    font-size: 1.05rem;
 }
 
 #tabla-sedes thead th {
@@ -35,30 +35,32 @@
 }
 
 #tabla-sedes tbody td {
-    padding:
-     16px;
+    padding: 16px;
 }
+
 #tabla-sedes tbody tr {
     height: auto;
 }
+
 #tabla-sedes td,
 #tabla-sedes th {
     vertical-align: middle;
 }
-.punto-fila data-img{
-    width:200%;
-    height:100%;
-    object-fit: cover; /*  hace que TODAS tengan mismo tamaño */
 
-   
+/* CORREGIDO */
+.punto-fila .data-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
+
 .punto-fila {
     cursor: pointer;
     transition: all 0.2s ease;
     width: 300px;
-    height: 100px
-  
+    height: 100px;
 }
+
 .punto-fila td:first-child {
     font-size: 1.1rem;
     font-weight: 700;
@@ -70,7 +72,7 @@
 
 .punto-fila.active {
     background-color: var(--verde-claro) !important;
-     border-left: 1px solid var(--verde-oscuro) !important;
+    border-left: 1px solid var(--verde-oscuro) !important;
 }
 
 #mapa-visor {
@@ -78,7 +80,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  
 }
 
 .visor-card {
@@ -100,7 +101,6 @@
     transform: translateY(-2px);
 }
 
-
 /* =========================
    DESKTOP GRANDES
 ========================= */
@@ -113,6 +113,7 @@
     }
 
 }
+
 /* =========================
    LAPTOPS Y TABLETS GRANDES
 ========================= */
@@ -125,6 +126,7 @@
     }
 
 }
+
 /* =========================
    TABLETS
 ========================= */
@@ -138,6 +140,14 @@
         padding-right:15px;
     }
 
+    #tabla-sedes{
+        font-size:15px;
+    }
+
+    #mapa-visor{
+        height:350px;
+    }
+
 }
 
 /* =========================
@@ -149,6 +159,54 @@
         width:100%;
         padding-left:15px;
         padding-right:15px;
+    }
+
+    .tabla-contenedor{
+        width:100%;
+        overflow-x:auto;
+        overflow-y:auto;
+        max-height:none;
+    }
+
+    #tabla-sedes{
+        min-width:700px;
+        font-size:14px;
+    }
+
+    #tabla-sedes thead th{
+        font-size:14px;
+        padding:10px;
+    }
+
+    #tabla-sedes tbody td{
+        padding:10px;
+        font-size:13px;
+    }
+
+    .punto-fila{
+        width:auto;
+        height:auto;
+    }
+
+    .punto-fila td:first-child{
+        font-size:14px;
+    }
+
+    #mapa-visor{
+        width:100%;
+        height:250px;
+        object-fit:cover;
+        border-radius:15px;
+    }
+
+    .visor-card{
+        margin-top:20px;
+    }
+
+    .btn-google{
+        width:100%;
+        font-size:14px;
+        padding:10px;
     }
 
 }
