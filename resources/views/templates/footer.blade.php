@@ -51,7 +51,7 @@
         </div>
 
         <div class="footer-bottom">
-             © 2026 Cabildo Mayor - Todos los derechos reservados
+        © 2024 Cabildo Mayor - Todos los derechos reservados
         </div>
 
     </footer>
